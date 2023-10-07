@@ -1,0 +1,50 @@
+﻿@page "/Login"
+@inject NavigationManager NavigationManager
+
+<AuthorizeView>
+    <Authorized>
+        Hello, @context.User.Identity?.Name!
+        <a href="/dashboard">dashboard</a>
+    </Authorized>
+    <NotAuthorized>
+        <h3>Login</h3>
+        <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" @bind="email" />
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" @bind="password" />
+        </div>
+        <button @onclick="login">Login</button>
+        @if (!string.IsNullOrWhiteSpace(errorMessage))
+        {
+            <div class="alert alert-danger">
+                @errorMessage
+            </div>
+        }
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private string email;
+    private string password;
+    private string errorMessage;
+    
+    private async Task login()
+    {
+        Console.WriteLine("Start login");
+        var authState = await PlayFabAuthenticationStateProvider.Instance.LoginAsync(email, password);
+
+        // Check if the login was successful
+        if (authState.User.Identity.IsAuthenticated)
+        {
+            // Redirect to the dashboard or another authorized page
+            NavigationManager.NavigateTo("/dashboard");
+        }
+        else
+        {
+            errorMessage = PlayFabAuthenticationStateProvider.Instance.errorMessage;
+        }
+    }
+}

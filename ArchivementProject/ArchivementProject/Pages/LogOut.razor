@@ -1,0 +1,32 @@
+﻿@page "/logout"
+@inject NavigationManager NavigationManager
+
+    @* <h3>Logout</h3> *@
+    @* <p>Are you sure you want to log out?</p> *@
+    @* <button class="btn btn-primary" @onclick="logout">Logout</button> *@
+
+<AuthorizeView>
+    <Authorized>
+    <h3>Logout</h3>
+    <p>Are you sure you want to log out?</p>
+    <button class="btn btn-primary" @onclick="logout">Logout</button>
+    </Authorized>
+    <NotAuthorized>
+        <a href="authentication/login">Log in</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@code {
+    private async Task logout()
+    {
+        try
+        {
+            await PlayFabAuthenticationStateProvider.Instance.LogoutAsync();
+            NavigationManager.NavigateTo("/Login");
+        }
+        catch (Exception ex)
+        {
+            // Handle logout errors...
+        }
+    }
+}

@@ -1,0 +1,65 @@
+﻿@page "/dashboard"
+@using PlayFab.ClientModels
+@using PlayFab
+@using PlayFab.EconomyModels
+@inject NavigationManager NavigationManager
+
+<AuthorizeView>
+    <Authorized>
+        <h3>Welcome to the Dashboard, @displayName</h3>
+        <button @onclick="Logout">Logout</button>
+    </Authorized>
+    <NotAuthorized>
+        <a href="/Login">Log in</a>
+    </NotAuthorized>
+</AuthorizeView>
+
+@* <h3>Welcome to the Dashboard, @displayName</h3> *@
+@* *@
+@* <button @onclick="Logout">Logout</button> *@
+
+@code {
+    private string displayName;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (await PlayFabAuthenticationStateProvider.Instance.IsUserLoggedInAsync())
+        {
+    // Retrieve the user's display name from PlayFab.
+            var request = new GetAccountInfoRequest();
+            var accountInfoResult = await PlayFabClientAPI.GetAccountInfoAsync(request);
+
+            var item = new GetInventoryItemsRequest();
+            var itemresualt = await PlayFabEconomyAPI.GetInventoryItemsAsync(item);
+
+            foreach (var VARIABLE in itemresualt.Result.Items)
+            {
+                Console.WriteLine(VARIABLE.Id);
+            }
+            
+            if (accountInfoResult != null)
+            {
+    // Display name retrieved successfully.
+                displayName = accountInfoResult.Result.AccountInfo.TitleInfo.DisplayName;
+            }
+            else
+            {
+    // Handle the error. You can redirect to an error page or display a message.
+    // For simplicity, we'll just set a default display name here.
+                displayName = "Null";
+            }
+        }
+        else
+        {
+            NavigationManager.NavigateTo("/Login");
+        }
+    }
+    
+    private async Task Logout()
+    {
+        await PlayFabAuthenticationStateProvider.Instance.LogoutAsync();
+
+    // Redirect to the login page or another appropriate page after logout
+        NavigationManager.NavigateTo("/Login");
+    }
+}

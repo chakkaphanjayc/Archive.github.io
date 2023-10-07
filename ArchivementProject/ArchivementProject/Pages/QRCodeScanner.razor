@@ -1,0 +1,45 @@
+﻿@page "/QRCodeScanner"
+
+@inject IJSRuntime JSRuntime
+
+<h3>QR Code Scanner</h3>
+
+<button @onclick="StartScanning">Start Scanning</button>
+<button @onclick="StopScanning">Stop Scanning</button>
+
+<div id="scanner-container">
+    <video id="scanner" style="display:none;"></video>
+</div>
+
+@if (!string.IsNullOrEmpty(result))
+{
+    <p>Scanned QR Code: @result</p>
+}
+
+@code {
+    private string result = "";
+    private bool isScanning = false;
+
+    private async Task StartScanning()
+    {
+        if (!isScanning)
+        {
+            await JSRuntime.InvokeVoidAsync("startQRCodeScanner", "scanner", (Action<string>)HandleScanResult);
+            isScanning = true;
+        }
+    }
+
+    private async Task StopScanning()
+    {
+        if (isScanning)
+        {
+            await JSRuntime.InvokeVoidAsync("stopQRCodeScanner");
+            isScanning = false;
+        }
+    }
+
+    private void HandleScanResult(string scannedData)
+    {
+        result = scannedData;
+    }
+}

@@ -1,0 +1,93 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\obj\\Debug\\net8.0\\compressed\\czi9ocyck3.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ArchivementProject.styles.css",
+      "PackagePath": "staticwebassets\\ArchivementProject.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\css\\bootstrap-icons\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-icons\\bootstrap-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\css\\bootstrap-icons\\bootstrap-icons.json",
+      "PackagePath": "staticwebassets\\css\\bootstrap-icons\\bootstrap-icons.json"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\css\\bootstrap-icons\\bootstrap-icons.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-icons\\bootstrap-icons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\css\\bootstrap-icons\\bootstrap-icons.scss",
+      "PackagePath": "staticwebassets\\css\\bootstrap-icons\\bootstrap-icons.scss"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\css\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "PackagePath": "staticwebassets\\css\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\css\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "PackagePath": "staticwebassets\\css\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ArchivementProject.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ArchivementProject.props",
+      "PackagePath": "build\\ArchivementProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ArchivementProject.props",
+      "PackagePath": "buildMultiTargeting\\ArchivementProject.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ArchivementProject.props",
+      "PackagePath": "buildTransitive\\ArchivementProject.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

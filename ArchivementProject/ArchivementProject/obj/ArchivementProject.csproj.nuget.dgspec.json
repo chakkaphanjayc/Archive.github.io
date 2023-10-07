@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\ArchivementProject.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\ArchivementProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\ArchivementProject.csproj",
+        "projectName": "ArchivementProject",
+        "projectPath": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\ArchivementProject.csproj",
+        "packagesPath": "C:\\Users\\JayC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JayC\\Documents\\laewteeh\\ArchivementProject\\ArchivementProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\JayC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Bit.BlazorUI": {
+              "target": "Package",
+              "version": "[5.6.1, )"
+            },
+            "Bit.BlazorUI.Assets": {
+              "target": "Package",
+              "version": "[5.6.1, )"
+            },
+            "Bit.BlazorUI.Extras": {
+              "target": "Package",
+              "version": "[5.6.1, )"
+            },
+            "Bit.BlazorUI.Icons": {
+              "target": "Package",
+              "version": "[5.6.1, )"
+            },
+            "Microsoft.AspNetCore.Components.Analyzers": {
+              "target": "Package",
+              "version": "[8.0.0-rc.1.23421.29, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[8.0.0-rc.1.23421.29, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.Authentication": {
+              "target": "Package",
+              "version": "[8.0.0-rc.1.23421.29, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0-rc.1.23421.29, )"
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0-rc.1.23419.4, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.Sdk.WebAssembly.Pack": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0-rc.1.23419.4, )",
+              "autoReferenced": true
+            },
+            "PlayFabAllSDK": {
+              "target": "Package",
+              "version": "[1.163.230915, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.9, )"
+            },
+            "ZXing.Net.Mobile": {
+              "target": "Package",
+              "version": "[3.1.0-beta2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[8.0.0-rc.1.23419.4, 8.0.0-rc.1.23419.4]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.1.23463.5/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
